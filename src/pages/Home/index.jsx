@@ -1,24 +1,21 @@
 import React from "react";
+import { Banner, Carousel, Header } from "../../components";
+import EmployerCard from "../../components/EmployerCard";
+import "./Home.css";
 
 export default function Home() {
   return (
     <div>
-      ssss
-      <section>
-        <div className="container">Banner</div>
-      </section>
+      <Header />
+      <Banner>
+        <input type="text" />
+      </Banner>
       <section>
         <div className="section__top">
           <h2>Featured Jobs</h2>
         </div>
         <div className="section_bottom">
-          <div className="container">
-            <div className="row">
-              <div className="card"></div>
-              <div className="card"></div>
-              <div className="card"></div>
-            </div>
-          </div>
+          <Carousel></Carousel>
         </div>
       </section>
       <section>
@@ -27,9 +24,9 @@ export default function Home() {
         </div>
         <div className="section__bottom">
           <div className="row">
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
+            <EmployerCard />
+            <EmployerCard />
+            <EmployerCard />
           </div>
         </div>
       </section>
@@ -39,15 +36,15 @@ export default function Home() {
         </div>
         <div className="section__bottom">
           <div className="grid">
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
+            <div className="card">ASD</div>
+            <div className="card">ASD</div>
+            <div className="card">ASD</div>
+            <div className="card">ASD</div>
+            <div className="card">ASD</div>
+            <div className="card">ASD</div>
+            <div className="card">ASD</div>
+            <div className="card">ASD</div>
+            <div className="card">ASD</div>
           </div>
         </div>
       </section>
