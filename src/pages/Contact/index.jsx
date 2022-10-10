@@ -1,6 +1,6 @@
 import '../Contact/Contact.css'
 
-import Footer from "../../components/Footer"
+import Footer from '../../components/Footer'
 
 const index = () => {
   return (
@@ -38,7 +38,7 @@ const index = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   )
 }

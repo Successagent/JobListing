@@ -68,6 +68,7 @@
   .contact-part-two .grid {
     margin-top: 30px;
     grid-template-columns: repeat(3, 1fr);
+    border: none;
   }
 
   .contact-part-two .grid > div {
