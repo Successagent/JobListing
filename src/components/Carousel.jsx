@@ -8,6 +8,10 @@ const StyledCarousel = styled.div`
 
   button {
   }
+  .inner {
+    display: flex;
+    gap: 10px;
+  }
 `;
 
 export default function Carousel({ children }) {
