@@ -69,12 +69,23 @@ button:focus-visible {
   align-items: center;
 }
 
+.section__bottom {
+  margin-bottom: 1em;
+}
+
 .row {
   display: flex;
   gap: 10px;
 }
 
 .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  border: 1px solid #000;
+  margin-bottom: 1em;
+}
+.job_grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   grid-gap: 1rem;

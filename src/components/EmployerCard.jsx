@@ -10,11 +10,16 @@ const StyledEmployerCard = styled.div`
   justify-content: space-between;
   gap: 10px;
   flex-direction: column;
+  width: 230px;
 
   .avatar {
-    padding: 10px;
+    padding: 2.4em;
     border-radius: 999px;
     background: #000;
+  }
+
+  .text {
+    text-align: center;
   }
 
   .card__bottom {
@@ -28,7 +33,7 @@ export default function EmployerCard() {
   return (
     <StyledEmployerCard>
       <div className="avatar"></div>
-      <div className="">
+      <div className="text">
         <h4>Caterine Shoaf</h4>
         <p>PHP Developer (6 Yrs Exp)</p>
       </div>
