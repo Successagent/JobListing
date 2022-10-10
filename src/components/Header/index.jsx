@@ -1,8 +1,9 @@
 import React from "react";
+import StyledHeader from "./Header.styled";
 
 export default function Header() {
   return (
-    <header className="navbar">
+    <StyledHeader>
       <div className="logo">PIN</div>
       <ul className="navbar-nav">
         <li className="nav-item">
@@ -31,6 +32,6 @@ export default function Header() {
           </a>
         </li>
       </ul>
-    </header>
+    </StyledHeader>
   );
 }
