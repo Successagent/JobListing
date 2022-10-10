@@ -1,16 +1,10 @@
 import React from "react";
-import { Banner, Carousel, Header } from "../../components";
+import { Banner, Carousel, Header, JobTypeSection } from "../../components";
 import EmployerCard from "../../components/EmployerCard";
 import JobCard, { CompactJobCard } from "../../components/JobCard";
 import SmallCard from "../../components/SmallCard";
-import {} from "";
+import { CompanyLogos } from "../../constants";
 import "./Home.css";
-
-const jobTypes = [
-  {
-    title: "Work From Home",
-  },
-];
 
 export default function Home() {
   return (
@@ -48,26 +42,15 @@ export default function Home() {
           <h2>Job Categories</h2>
         </div>
         <div className="section__bottom">
-          <div className="grid">
-            {[1, 1, 1, 1, 1, 1, 1, 1].map(() => (
+          <div className="job_categories">
+            {CompanyLogos.map(() => (
               <SmallCard>Test</SmallCard>
             ))}
           </div>
           <button>View More</button>
         </div>
       </section>
-      <section>
-        <div className="section__top">
-          <h2>Job Type</h2>
-        </div>
-        <div className="section_bottom">
-          <div className="row">
-            {[1, 1, 1, 1, 1, 1].map(() => (
-              <SmallCard>Test</SmallCard>
-            ))}
-          </div>
-        </div>
-      </section>
+      <JobTypeSection />
       <section>
         <div className="section__top">
           <h2>Top Companies</h2>
@@ -75,8 +58,8 @@ export default function Home() {
         <div className="section_bottom">
           <div className="container">
             <Carousel>
-              {[1, 1, 1, 1, 1, 1, 1, 1].map(() => (
-                <div className="card">as</div>
+              {CompanyLogos.map(() => (
+                <SmallCard>Company</SmallCard>
               ))}
             </Carousel>
           </div>
@@ -111,7 +94,10 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <p>Subscribe to our newsletter</p>
+        <div className="row">
+          <p>Subscribe to our newsletter</p>
+          <input type="text" placeholder="Enter your email" />
+        </div>
       </section>
     </div>
   );

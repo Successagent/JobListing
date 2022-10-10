@@ -21,6 +21,7 @@ const StyledJobCard = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
     border: 1px solid #000;
+    font-size: 0.8em;
   }
   button {
     align-self: center;

@@ -5,7 +5,7 @@ const StyledHeader = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 3em;
+  padding: 2em 3em;
   color: #000;
   position: sticky;
   top: 0;

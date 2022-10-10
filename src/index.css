@@ -97,6 +97,15 @@ button:focus-visible {
   grid-gap: 1rem;
 }
 
+.horizontal_line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.horizontal_line > div {
+  border-top: 1px solid #000;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
