@@ -1,0 +1,60 @@
+.about-page {
+  max-width: 600px;
+}
+
+.about-hero-section {
+  margin-top: 100px;
+  height: 200px;
+  background-color: rgba(13, 110, 253, 0.9);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+  margin-right: 40px;
+}
+
+.h1 {
+  font-family: var(--mav-fam);
+  font-size: 32px;
+}
+
+.h2,
+.h5,
+.p {
+  color: #605e7e;
+  font-family: var(--quickstand-fam);
+}
+
+.h2 {
+  font-size: 40px;
+}
+
+.p {
+  font-size: 18px;
+}
+
+.h5 {
+  font-size: 14px;
+}
+
+.li {
+  font-size: 14px;
+  font-weight: 300px;
+  font-family: var(--quickstand-fam);
+}
+
+.about-part-two {
+  padding: 50px 10px;
+  background-color: #edf7fb;
+}
+
+.about-part-three {
+    padding: 50px 10px;
+    text-align: center;
+}
