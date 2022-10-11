@@ -2,13 +2,7 @@ import "./index.css";
 import React from "react";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 
-<<<<<<< HEAD
-import ReactDOM from 'react-dom/client'
-import { Home, About } from './pages'
-import Contact from './pages/Contact'
-import JobLeft from './pages/JobLeft'
-import { Login } from './pages/auth'
-=======
+import JobLeft from "./pages/JobLeft";
 import ReactDOM from "react-dom/client";
 import { Home, About } from "./pages";
 import Contact from "./pages/Contact";
@@ -36,14 +30,11 @@ const router = createBrowserRouter([
   },
 
   {
-<<<<<<< HEAD
-    path: '/jobleft',
+    path: "/jobleft",
     element: <JobLeft />,
   },
 
   {
-    path: '/login',
-=======
     path: "/login",
     element: <Login />,
   },
