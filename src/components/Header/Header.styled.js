@@ -22,6 +22,23 @@ const StyledHeader = styled.section`
       display: none;
     }
   }
+
+  .menu__links {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    position: absolute;
+    top: 80%;
+    border-radius: 4px;
+    box-shadow: 0 0 4px #0005;
+    background: #fff;
+    padding: 1em 2em;
+    transition: all 200ms;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
   .navbar-nav {
     display: none;
     gap: 10px;
