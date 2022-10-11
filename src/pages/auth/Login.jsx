@@ -27,7 +27,7 @@ export default function Login() {
           <input className="input" type="text" placeholder="Enter email" />
         </label>
         <label className="label">
-          <p>Email Address</p>
+          <p>Password</p>
           <input className="input" type="text" placeholder="Password" />
         </label>
         <div className="row jcsb">

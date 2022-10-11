@@ -30,23 +30,28 @@ export default function Header() {
           </Link>
         </li>
         <li className="nav-item">
-          <Link to={"/about"} href="#" className="nav-link">
+          <Link to={"/about"} className="nav-link">
             About
           </Link>
         </li>
         <li className="nav-item">
-          <Link to={"/contact"} href="#" className="nav-link">
+          <Link to={"/contact"} className="nav-link">
             Contact
           </Link>
         </li>
-        <li className="nav-item">
-          <Link to={"/jobs"} href="#" className="nav-link">
+        {/* <li className="nav-item">
+          <Link to={"/jobs"} className="nav-link">
             Job listing
+          </Link>
+        </li> */}
+        <li className="nav-item">
+          <Link to={"/job"} className="nav-link">
+            Job
           </Link>
         </li>
         <li className="nav-item">
-          <Link to={"/job"} href="#" className="nav-link">
-            Job
+          <Link to={"/login"} className="nav-link">
+            Login
           </Link>
         </li>
       </ul>
