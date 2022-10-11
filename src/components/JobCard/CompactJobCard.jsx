@@ -5,7 +5,15 @@ const StyledCompactJobCard = styled.div`
   display: flex;
   align-content: center;
   gap: 20px;
-
+  border: 1px solid #e8ebf3;
+  border-radius: 2px;
+  background: #fff;
+  justify-content: space-between;
+  padding: 20px;
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    align-items: start;
+  }
   .job_card__desc {
     display: flex;
     gap: 10px;

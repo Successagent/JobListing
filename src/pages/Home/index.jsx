@@ -3,8 +3,12 @@ import { Banner, Carousel, Header, JobTypeSection } from "../../components";
 import EmployerCard from "../../components/EmployerCard";
 import JobCard, { CompactJobCard } from "../../components/JobCard";
 import SmallCard from "../../components/SmallCard";
-import { CompanyLogos } from "../../constants";
+import { CompanyLogos, JobCategories } from "../../constants";
 import "./Home.css";
+import companyLogo from "../../assets/stock3.png";
+import Testimonials from "../../components/Testimonials";
+import SearchBar from "../../components/SearchBar/index";
+import Footer from "../../components/Footer/index";
 
 export default function Home() {
   return (
@@ -13,10 +17,11 @@ export default function Home() {
       <Banner>
         <div className="">
           <h1>Search for best job for your future</h1>
-          <p>This line sha just dey ok</p>
+          <p>Find your job now</p>
         </div>
+        <SearchBar />
       </Banner>
-      <section>
+      <section className="section--white">
         <div className="section__top">
           <h2>Featured Jobs</h2>
         </div>
@@ -33,55 +38,49 @@ export default function Home() {
           <h2>Featured Employers</h2>
         </div>
         <div className="section__bottom">
-          <div className="row">
+          <div className="grid--small">
             {[1, 1, 1, 1].map(() => (
               <EmployerCard />
             ))}
           </div>
         </div>
       </section>
-      <section>
+      <section className="section--white">
         <div className="section__top">
           <h2>Job Categories</h2>
         </div>
         <div className="section__bottom">
           <div className="job_categories">
-            {CompanyLogos.map(() => (
-              <SmallCard>Test</SmallCard>
+            {JobCategories.map((job) => (
+              <SmallCard>
+                <img src={job.icon} width={50} alt="" />
+                <p>{job.title}</p>
+              </SmallCard>
             ))}
           </div>
           <button>View More</button>
         </div>
       </section>
       <JobTypeSection />
-      <section>
+      <section className="section--white">
         <div className="section__top">
           <h2>Top Companies</h2>
         </div>
         <div className="section_bottom">
           <div className="container">
-            <Carousel>
+            {/* <Carousel> */}
+            <div className="grid--small">
               {CompanyLogos.map(() => (
-                <SmallCard>Company</SmallCard>
+                <SmallCard>
+                  <img src={companyLogo} alt="" />
+                </SmallCard>
               ))}
-            </Carousel>
+            </div>
+            {/* </Carousel> */}
           </div>
         </div>
       </section>
-      <section>
-        <div className="section__top">
-          <h2>Testimonials</h2>
-        </div>
-        <div className="section_bottom">
-          <div className="container">
-            <Carousel>
-              <div className="card"></div>
-              <div className="card"></div>
-              <div className="card"></div>
-            </Carousel>
-          </div>
-        </div>
-      </section>
+      <Testimonials />
       <section>
         <div className="section__top">
           <h2>Latest Jobs</h2>
@@ -96,12 +95,16 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
-        <div className="row">
+      <section className="newsletter_sect">
+        <div className="column">
           <p>Subscribe to our newsletter</p>
-          <input type="text" placeholder="Enter your email" />
+          <div className="subscribe_form">
+            <input type="text" placeholder="Enter your email" />
+            <button>Subscribe</button>
+          </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

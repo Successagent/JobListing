@@ -10,6 +10,14 @@ import { Login } from './pages/auth'
 
 import JobsList from './pages/JobsList'
 
+import JobLeft from "./pages/JobLeft";
+import ReactDOM from "react-dom/client";
+import { Home, About } from "./pages";
+import Contact from "./pages/Contact";
+import { Login } from "./pages/auth";
+import JobsList from "./pages/JobsList";
+import Register from "./pages/auth/Register";
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -30,18 +38,22 @@ const router = createBrowserRouter([
   },
 
   {
-    path: '/jobleft',
+
+    path: '/job',
     element: <JobLeft />,
   },
 
   {
     path: '/login',
-
     element: <Login />,
   },
   {
-    path: '/register',
-    element: <About />,
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/register",
+    element: <Register />,
   },
 ])
 

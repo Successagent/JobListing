@@ -5,14 +5,67 @@ const StyledHeader = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2em 3em;
+  padding: 1.5em 2em;
   color: #000;
   position: sticky;
   top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 11px #0002;
+
+  @media screen and (min-width: 768px) {
+    padding: 1.5em 6em;
+  }
+
+  .menu {
+    display: block;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .menu__links {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    position: absolute;
+    top: 80%;
+    border-radius: 4px;
+    box-shadow: 0 0 4px #0005;
+    background: #fff;
+    padding: 1em 2em;
+    transition: all 200ms;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
 
   .navbar-nav {
-    display: flex;
+    display: none;
     gap: 10px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+
+    li a {
+      color: #504e70;
+      font-size: 0.9rem;
+    }
+    li {
+      padding: 0.5em 1em;
+      border-radius: 3px;
+    }
+    li:hover {
+      background: var(--primary-8);
+    }
+    li:hover a {
+      color: #fff;
+    }
+  }
+  .call_btn {
+    color: var(--primary-8);
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
 `;
 
