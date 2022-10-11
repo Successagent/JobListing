@@ -10,6 +10,8 @@ import {
   FaDribbble,
   FaTwitter,
   FaGoogle,
+  FaUser,
+  FaStar,
 } from 'react-icons/fa'
 
 const index = () => {
@@ -34,45 +36,138 @@ const index = () => {
           </ul>
         </div>
         <div className="jobleft-part-two">
-          <div className="jobleft-part-two-sect-one">
-            <div>
-              <p className="p">Posted By</p>
-            </div>
-            <div className="jobleft-part-two-sect-one-item-one">
-              <img src={ProfileLogo} alt="" />
-              <p className="p">Robert McLean</p>
-              <h5 className="h5">
-                Hr Recruiter of Hardware &amp; Network Pvt ltd Member Since
-                November 2008
-              </h5>
-              <button className="form-btn">See All Ads</button>
-            </div>
-            <div className="jobleft-part-two-sect-one-item-two">
-              <p className="p">Contact Info</p>
+          <div>
+            <div className="jobleft-part-two-sect-one">
               <div>
-                <div className="icon-con" style={{ color: "green" }}>
+                <p className="p">Posted By</p>
+              </div>
+              <div className="jobleft-part-two-sect-one-item-one">
+                <img src={ProfileLogo} alt="" />
+                <p className="p">Robert McLean</p>
+                <h5 className="h5">
+                  Hr Recruiter of Hardware &amp; Network Pvt ltd Member Since
+                  November 2008
+                </h5>
+                <button className="form-btn">See All Ads</button>
+              </div>
+              <div className="jobleft-part-two-sect-one-item-two">
+                <p className="p">Contact Info</p>
+                <div>
+                  <div className="icon-con" style={{ color: 'green' }}>
+                    <FaEnvelope></FaEnvelope>
+                  </div>
+                  <h5 className="h5">robert123@gmail.com</h5>
+                </div>
+                <div>
+                  <div className="icon-con" style={{ color: 'green' }}>
+                    <FaPhone></FaPhone>
+                  </div>
+                  <h5 className="h5">robert123@gmail.com</h5>
+                </div>
+                <div>
+                  <div className="icon-con" style={{ color: 'green' }}>
+                    <FaLink></FaLink>
+                  </div>
+                  <h5 className="h5">robert123@gmail.com</h5>
+                </div>
+              </div>
+              <div className="jobleft-part-two-sect-one-item-three">
+                <div
+                  className="icon-con"
+                  style={{ backgroundColor: '#1a1e5d' }}
+                >
+                  <FaFacebook></FaFacebook>
+                </div>
+                <div
+                  className="icon-con"
+                  style={{ backgroundColor: '#0d6efd' }}
+                >
+                  <FaGoogle></FaGoogle>
+                </div>
+                <div
+                  className="icon-con"
+                  style={{ backgroundColor: '#dc3545' }}
+                >
+                  <FaTwitter></FaTwitter>
+                </div>
+                <div
+                  className="icon-con"
+                  style={{ backgroundColor: '#198754' }}
+                >
+                  <FaDribbble></FaDribbble>
+                </div>
+              </div>
+              <div className="jobleft-part-two-sect-one-item-four">
+                <button style={{ backgroundColor: '#0d6efd' }}>
+                  <FaUser></FaUser>
+                  <h5 className="h5">Chat</h5>
+                </button>
+                <button style={{ backgroundColor: '#6f42c1' }}>
                   <FaEnvelope></FaEnvelope>
-                </div>
-                <h5 className="h5">robert123@gmail.com</h5>
-              </div>
-              <div>
-                <div className="icon-con" style={{ color: "green" }}>
-                  <FaPhone></FaPhone>
-                </div>
-                <h5 className="h5">robert123@gmail.com</h5>
-              </div>
-              <div>
-                <div className="icon-con" style={{ color: "green" }}>
-                  <FaLink></FaLink>
-                </div>
-                <h5 className="h5">robert123@gmail.com</h5>
+                  <h5 className="h5">Contact Me</h5>
+                </button>
               </div>
             </div>
-            <div>
-                
+            <div className="jobleft-part-two-sect-two">
+              <p className="p">Keywords</p>
+              <div className="jobleft-part-two-sect-one-item-four">
+                <button>
+                  <h5 className="h5">Software</h5>
+                </button>
+                <button>
+                  <h5 className="h5">Hardware & Network</h5>
+                </button>
+                <button>
+                  <h5 className="h5">Job in USA</h5>
+                </button>
+              </div>
+            </div>
+            <div className="jobleft-part-two-sect-three">
+              <p className="p">Shares</p>
+              <div className="jobleft-part-two-sect-one-item-three">
+                <div
+                  className="icon-con"
+                  style={{ backgroundColor: '#1a1e5d' }}
+                >
+                  <FaFacebook></FaFacebook>
+                </div>
+                <div
+                  className="icon-con"
+                  style={{ backgroundColor: '#0d6efd' }}
+                >
+                  <FaGoogle></FaGoogle>
+                </div>
+                <div
+                  className="icon-con"
+                  style={{ backgroundColor: '#dc3545' }}
+                >
+                  <FaTwitter></FaTwitter>
+                </div>
+                <div
+                  className="icon-con"
+                  style={{ backgroundColor: '#198754' }}
+                >
+                  <FaDribbble></FaDribbble>
+                </div>
+              </div>
+            </div>
+            <div className="jobleft-part-two-sect-four">
+              <p className="p">Map Location</p>
+              <div></div>
             </div>
           </div>
-          <div></div>
+          <div>
+            <div className='jobleft-part-two-item-one'>
+              <p className="p">Hardware Technician</p>
+              <div className="star-con">
+                <FaStar></FaStar>
+                <FaStar></FaStar>
+                <FaStar></FaStar>
+                <FaStar></FaStar>
+                <FaStar></FaStar>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="about-part-seven">
           <div>
