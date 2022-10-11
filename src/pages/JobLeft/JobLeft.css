@@ -132,7 +132,7 @@
   margin-top: 30px;
 }
 
-.jobleft-part-two-sect-two button {
+.jobleft-part-two-sect-two .jobleft-part-two-sect-one-item-four button {
   background-color: white;
   border: 1px solid #c5d6dd;
 }
@@ -164,4 +164,54 @@
   height: 250px;
   width: 90%;
   margin: 20px auto;
+}
+
+.jobleft-part-two > div:nth-child(1) {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 500px) {
+  .jobleft-page {
+    max-width: 100%;
+  }
+
+  .jobleft-form {
+    flex-direction: row;
+    gap: 0px;
+    width: 60%;
+  }
+
+  .jobleft-form .input {
+    width: 70%;
+  }
+
+  .jobleft-form .form-btn {
+    width: 30%;
+  }
+
+  .jobleft-part-one {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+  }
+
+  .jobleft-part-two {
+    flex-direction: row;
+    gap: 50px;
+    padding: 50px 100px;
+  }
+
+  .jobleft-part-two > div:nth-child(1) {
+    width: 40%;
+  }
+
+  .jobleft-part-two > div:nth-child(2) {
+    width: 60%;
+  }
+
+  .jobleft-part-two form {
+    width: 100%;
+    margin: 0;
+  }
 }

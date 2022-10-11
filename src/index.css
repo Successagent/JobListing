@@ -49,8 +49,12 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  color: #605e7e;
+  
 }
+
+/* a, p {
+  color: #605e7e;
+} */
 
 h1 {
   font-size: 3.2em;
@@ -139,8 +143,6 @@ button:focus-visible {
   border-top: 1px solid #e8ebf3;
 }
 
-.newsletter_sect {
-}
 
 .subscribe_form {
   display: flex;

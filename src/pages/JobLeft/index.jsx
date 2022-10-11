@@ -13,6 +13,7 @@ import {
   FaUser,
   FaStar,
 } from 'react-icons/fa'
+import { JobCard } from '../../components'
 
 const index = () => {
   return (
@@ -157,16 +158,19 @@ const index = () => {
             </div>
           </div>
           <div>
-            <div className='jobleft-part-two-item-one'>
-              <p className="p">Hardware Technician</p>
-              <div className="star-con">
-                <FaStar></FaStar>
-                <FaStar></FaStar>
-                <FaStar></FaStar>
-                <FaStar></FaStar>
-                <FaStar></FaStar>
-              </div>
-            </div>
+            <JobCard />
+            <div className="contact-part-one">
+          <form className="contact-form">
+            <input className="input" type="text" placeholder="Your Name" />
+            <input className="input" type="email" placeholder="Email Address" />
+            <textarea
+              className="input textarea"
+              placeh
+              older="Message"
+            ></textarea>
+            <button>Send Message</button>
+          </form>
+        </div>
           </div>
         </div>
         <div className="about-part-seven">
