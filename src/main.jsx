@@ -1,61 +1,52 @@
-import "./index.css";
-import React from "react";
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import './index.css'
+import React from 'react'
+import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom'
 
-<<<<<<< HEAD
 import ReactDOM from 'react-dom/client'
 import { Home, About } from './pages'
 import Contact from './pages/Contact'
 import JobLeft from './pages/JobLeft'
 import { Login } from './pages/auth'
-=======
-import ReactDOM from "react-dom/client";
-import { Home, About } from "./pages";
-import Contact from "./pages/Contact";
-import { Login } from "./pages/auth";
-import JobsList from "./pages/JobsList";
->>>>>>> aa7bf2287426d8f0f688380c34fbb95b04e54227
+
+import JobsList from './pages/JobsList'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Home />,
   },
   {
-    path: "/about",
+    path: '/about',
     element: <About />,
   },
   {
-    path: "/jobs-list",
+    path: '/jobs-list',
     element: <JobsList />,
   },
 
   {
-    path: "/contact",
+    path: '/contact',
     element: <Contact />,
   },
 
   {
-<<<<<<< HEAD
     path: '/jobleft',
     element: <JobLeft />,
   },
 
   {
     path: '/login',
-=======
-    path: "/login",
->>>>>>> aa7bf2287426d8f0f688380c34fbb95b04e54227
+
     element: <Login />,
   },
   {
-    path: "/register",
+    path: '/register',
     element: <About />,
   },
-]);
+])
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
-);
+  </React.StrictMode>,
+)
