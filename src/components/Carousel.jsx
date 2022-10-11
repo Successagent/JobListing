@@ -5,8 +5,11 @@ const StyledCarousel = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
   /* background: ${(props) => (props.primary ? "palevioletred" : "white")}; */
   button {
+    position: absolute;
+    left: -5px;
     --size: 3em;
     height: var(--size);
     width: var(--size);
@@ -21,16 +24,20 @@ const StyledCarousel = styled.div`
     align-items: center;
     justify-content: center;
     color: #000;
+    z-index: 9;
+    /* Temporarily Hide buttonss */
+    display: none;
+  }
+  .right__btn {
+    right: -5px;
+    left: unset;
   }
   .inner {
     gap: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 1rem;
     width: 100%;
-    @media screen and (max-width: 500px) {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
   }
 `;
 
@@ -39,7 +46,7 @@ export default function Carousel({ children }) {
     <StyledCarousel>
       <button>&lt;</button>
       <div className="inner">{children}</div>
-      <button>&gt;</button>
+      <button className="right__btn">&gt;</button>
     </StyledCarousel>
   );
 }
