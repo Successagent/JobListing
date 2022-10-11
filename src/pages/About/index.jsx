@@ -1,6 +1,7 @@
 import "../About/About.css";
 import Footer from "../../components/Footer";
 import { Header } from "../../components";
+import Banner from "../../components/Banner/index";
 import {
   FaUser,
   FaPencilAlt,
@@ -18,13 +19,10 @@ const About = () => {
     <>
       <Header />
       <div className="about-page">
-        <div className="about-hero-section">
-          <h1 className="h1">About Us</h1>
-          <ul className="flex">
-            <li className="li">Home</li>
-            <li className="li">About Us</li>
-          </ul>
-        </div>
+        <Banner small>
+          <h1>About Us</h1>
+          <p>Home / About</p>
+        </Banner>
         <div className="about-part-two">
           <h2 className="h2">Why DynamicJobListing?</h2>
           <p className="p">

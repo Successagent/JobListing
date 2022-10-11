@@ -39,16 +39,19 @@ const StyledAuthPage = styled.div`
       display: flex;
       flex-direction: column;
     }
-    .label {
+    .label p {
       /* w100 */
+      font-size: 0.9em;
     }
     .jcsb {
       justify-content: space-between;
     }
     .input {
-      padding: 0.4em 1em;
+      padding: 0.9em 1em;
       border: 1px solid #e8ebf3;
       width: 100%;
+      font-size: 0.8em;
+      height: unset;
     }
     button {
       padding: 0.7em 2em;

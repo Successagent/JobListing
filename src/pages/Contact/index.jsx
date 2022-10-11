@@ -1,18 +1,18 @@
-import '../Contact/Contact.css'
+import "../Contact/Contact.css";
 
-import Footer from '../../components/Footer'
+import Footer from "../../components/Footer";
+import { Banner } from "../../components";
+import Header from "../../components/Header/index";
 
 const index = () => {
   return (
     <>
+      <Header />
       <div className="contact-page">
-        <div className="about-hero-section">
-          <h1 className="h1">Contact Us</h1>
-          <ul className="flex">
-            <li className="li">Home</li>
-            <li className="li">Contact</li>
-          </ul>
-        </div>
+        <Banner small>
+          <h1>Contact Us</h1>
+          <p>Home / Contact</p>
+        </Banner>
         <div className="contact-part-one">
           <form className="contact-form">
             <input className="input" type="text" placeholder="Your Name" />
@@ -32,15 +32,15 @@ const index = () => {
             dolorem.F
           </h5>
           <div className="grid">
-            <div style={{ backgroundColor: '#0d6efd' }}></div>
-            <div style={{ backgroundColor: '#d63384' }}></div>
-            <div style={{ backgroundColor: '#ffc107' }}></div>
+            <div style={{ backgroundColor: "#0d6efd" }}></div>
+            <div style={{ backgroundColor: "#d63384" }}></div>
+            <div style={{ backgroundColor: "#ffc107" }}></div>
           </div>
         </div>
       </div>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default index
+export default index;
