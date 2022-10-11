@@ -16,7 +16,7 @@
   --primary-9: rgba(105, 99, 255, 0.9);
   --mav-fam: "Maven Pro", sans-serif;
   --quickstand-fam: "Quicksand", sans-serif;
-  color-scheme: light dark;
+
   background-color: #f6f7fb;
 
   font-synthesis: none;
@@ -160,17 +160,4 @@ button:focus-visible {
 }
 .subscribe_form button {
   border-radius: 0 5px 5px 0;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

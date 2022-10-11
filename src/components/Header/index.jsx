@@ -16,9 +16,9 @@ export default function Header() {
       {isOpen && (
         <div className="menu__links">
           <Link to={"/"}>Home</Link>
-          <Link to={"/"}>About</Link>
-          <Link to={"/"}>Contact</Link>
-          <Link to={"/"}>Jobs</Link>
+          <Link to={"/about"}>About</Link>
+          <Link to={"/contact"}>Contact</Link>
+          <Link to={"/job"}>Jobs</Link>
         </div>
       )}
       <div className="logo">DynamicJobListing</div>
