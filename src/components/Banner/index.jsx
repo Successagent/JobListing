@@ -16,8 +16,11 @@ const StyledBanner = styled.section`
   position: relative;
 
   h1 {
-    font-size: 3em;
+    font-size: 2em;
     color: #fff;
+    @media screen and (min-width: 768px) {
+      font-size: 2.6em;
+    }
   }
   &::before {
     content: "";

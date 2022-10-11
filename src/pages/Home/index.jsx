@@ -7,6 +7,7 @@ import { CompanyLogos, JobCategories } from "../../constants";
 import "./Home.css";
 import companyLogo from "../../assets/stock3.png";
 import Testimonials from "../../components/Testimonials";
+import SearchBar from "../../components/SearchBar/index";
 
 export default function Home() {
   return (
@@ -15,8 +16,9 @@ export default function Home() {
       <Banner>
         <div className="">
           <h1>Search for best job for your future</h1>
-          <p>This line sha just dey ok</p>
+          <p>Find your job now</p>
         </div>
+        <SearchBar />
       </Banner>
       <section className="section--white">
         <div className="section__top">
@@ -92,10 +94,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="newsletter_sect">
         <div className="column">
           <p>Subscribe to our newsletter</p>
-          <div className="subscribe">
+          <div className="subscribe_form">
             <input type="text" placeholder="Enter your email" />
             <button>Subscribe</button>
           </div>

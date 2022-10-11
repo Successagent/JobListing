@@ -30,17 +30,17 @@ export default function Register() {
           <p>Email Address</p>
           <input className="input" type="text" placeholder="Password" />
         </label>
-        <div className="row jcsb">
+        <div className="row jcsb ">
           <label className="row">
             <input type="checkbox" name="" id="" />
-            <p>Remember me</p>
+            <p>
+              <small>Agree to the terms and policy</small>
+            </p>
           </label>
-
-          <Link to={"/"}>Forgot Password</Link>
         </div>
-        <button>SignIn</button>
+        <button>Create an account</button>
         <p>
-          Don't have an account yet? <Link to={"/"}>Sign Up</Link>
+          Already have an account? <Link to={"/"}>Sign In</Link>
         </p>
       </form>
     </StyledAuthPage>

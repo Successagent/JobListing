@@ -139,6 +139,25 @@ button:focus-visible {
   border-top: 1px solid #e8ebf3;
 }
 
+.newsletter_sect {
+}
+
+.subscribe_form {
+  display: flex;
+}
+
+.subscribe_form :is(input, button) {
+  padding: 1em;
+  border: none;
+}
+
+.subscribe_form input {
+  border-radius: 5px 0 0 5px;
+}
+.subscribe_form button {
+  border-radius: 0 5px 5px 0;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

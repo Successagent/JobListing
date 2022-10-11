@@ -5,11 +5,17 @@ const StyledHeader = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2em 3em;
+  padding: 1.5em 2em;
   color: #000;
   position: sticky;
   top: 0;
   z-index: 10;
+  box-shadow: 0 4px 11px #0002;
+
+  @media screen and (min-width: 768px) {
+    padding: 1.5em 6em;
+  }
+
   .menu {
     display: block;
     @media screen and (min-width: 768px) {
@@ -21,6 +27,21 @@ const StyledHeader = styled.section`
     gap: 10px;
     @media screen and (min-width: 768px) {
       display: flex;
+    }
+
+    li a {
+      color: #333;
+      font-size: 0.9rem;
+    }
+    li {
+      padding: 0.5em 1em;
+      border-radius: 3px;
+    }
+    li:hover {
+      background: var(--primary-8);
+    }
+    li:hover a {
+      color: #fff;
     }
   }
   .call_btn {

@@ -33,10 +33,14 @@ export default function Login() {
         <div className="row jcsb">
           <label className="row">
             <input type="checkbox" name="" id="" />
-            <p>Remember me</p>
+            <p>
+              <small>Remember me</small>
+            </p>
           </label>
 
-          <Link to={"/"}>Forgot Password</Link>
+          <Link to={"/"}>
+            <small>Forgot Password</small>
+          </Link>
         </div>
         <button>SignIn</button>
         <p>

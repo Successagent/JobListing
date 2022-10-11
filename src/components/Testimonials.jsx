@@ -6,6 +6,18 @@ import styled from "styled-components";
 const StyledTestimonials = styled.section`
   background: #fff;
 
+  .testimony_card {
+    width: 100%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+      padding: 1em 7em;
+    }
+  }
+
   .testimony_card__top img {
     border-radius: 999px;
     border: 2px solid white;
