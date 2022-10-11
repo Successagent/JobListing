@@ -34,6 +34,7 @@ footer {
 
 .footer-part-one .h5 {
   color: white;
+  font-family: var(--mav-fam);
 }
 
 .footer-part-one-icons {
@@ -78,6 +79,10 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     padding: inherit 0px;
+  }
+
+  .footer .about-page-form {
+    width: 100%;
   }
 
 }

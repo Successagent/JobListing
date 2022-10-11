@@ -1,0 +1,96 @@
+.jobleft-page {
+  max-width: 500px;
+}
+
+.jobleft-page .about-hero-section {
+  height: 320px;
+}
+
+.jobleft-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+  width: 95%;
+}
+
+.jobleft-form .input {
+  width: 100%;
+}
+
+.jobleft-form .form-btn {
+  width: 100%;
+  background-color: #dc3545;
+}
+
+.jobleft-part-one {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+}
+
+.jobleft-part-one ul {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.jobleft-part-two {
+  background-color: #edf7fb;
+  padding: 50px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.jobleft-part-two-sect-one {
+  border: 1px solid #c5d6dd;
+  background-color: white;
+}
+
+.jobleft-part-two .p,
+.jobleft-part-two .h5 {
+  margin-bottom: 0px;
+}
+
+.jobleft-part-two-sect-one > div:nth-child(1),
+.jobleft-part-two-sect-one-item-two {
+  padding: 15px;
+}
+
+.jobleft-part-two img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.jobleft-part-two-sect-one-item-one {
+  border: 0.1px solid #d8e5eb;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.jobleft-part-two-sect-one-item-one button {
+  border-radius: 5px;
+  height: 40px;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.jobleft-part-two-sect-one-item-two .p{
+    margin-bottom: 20px;
+}
+
+.jobleft-part-two-sect-one-item-two > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.jobleft-part-two .icon-con {
+  width: 40px;
+  height: 40px;
+  font-size: 12px;
+  margin: 0px;
+}
