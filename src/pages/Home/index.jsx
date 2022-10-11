@@ -11,7 +11,10 @@ export default function Home() {
     <div>
       <Header />
       <Banner>
-        <input type="text" />
+        <div className="">
+          <h1>Search for best job for your future</h1>
+          <p>This line sha just dey ok</p>
+        </div>
       </Banner>
       <section>
         <div className="section__top">
@@ -19,7 +22,7 @@ export default function Home() {
         </div>
         <div className="section_bottom">
           <Carousel>
-            {[1, 1, 1, 1].map(() => (
+            {[1, 1, 1].map(() => (
               <JobCard />
             ))}
           </Carousel>

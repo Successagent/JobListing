@@ -1,5 +1,6 @@
 import React from "react";
 import CompactJobCard from "./CompactJobCard";
+import stockImg1 from "../../assets/stock1.jpg";
 import styled from "styled-components";
 
 const StyledJobCard = styled.div`
@@ -9,8 +10,12 @@ const StyledJobCard = styled.div`
   gap: 20px;
 
   .card__top {
-    padding: 3em;
     background: #000;
+    padding-bottom: 0;
+  }
+  .card__top img {
+    padding-bottom: 0;
+    height: 200px;
   }
 
   .card__bottom {
@@ -20,7 +25,6 @@ const StyledJobCard = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
-    border: 1px solid #000;
     font-size: 0.8em;
   }
   button {
@@ -31,7 +35,9 @@ const StyledJobCard = styled.div`
 export default function JobCard() {
   return (
     <StyledJobCard>
-      <div className="card__top"></div>
+      <div className="card__top">
+        <img src={stockImg1} alt="" />
+      </div>
       <div className="card__bottom">
         <h4>Female Person</h4>
         <ul className="card__desc_grid">

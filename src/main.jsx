@@ -5,6 +5,7 @@ import { Login } from "./pages/auth";
 
 import "./index.css";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import JobsList from "./pages/JobsList";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/jobs-list",
+    element: <JobsList />,
   },
 
   // AUTH pages
