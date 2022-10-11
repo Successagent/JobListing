@@ -4,7 +4,8 @@ import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom'
 
 import ReactDOM from 'react-dom/client'
 import { Home, About } from './pages'
-import Contact from "./pages/Contact" 
+import Contact from './pages/Contact'
+import JobLeft from './pages/JobLeft'
 import { Login } from './pages/auth'
 
 const router = createBrowserRouter([
@@ -20,6 +21,11 @@ const router = createBrowserRouter([
   {
     path: '/contact',
     element: <Contact />,
+  },
+
+  {
+    path: '/jobleft',
+    element: <JobLeft />,
   },
 
   {

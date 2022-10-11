@@ -143,26 +143,77 @@
   padding: 50px 15px;
   text-align: center;
   background-color: #edf7fb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-page-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .input {
-    height: 45px;
-    background-color: white;
-    border: none;
-    width: 70%;
+  height: 45px;
+  background-color: white;
+  border: none;
+  width: 70%;
+  outline: none;
+  color: #605e7e;
+  padding-left: 20px;
+  font-size: 20px;
 }
 
-
 .form-btn {
-    background-color: #0d6efd;
-    height: 45px;
-    border-bottom-left-radius: 0px;
-    border-top-left-radius: 0px;
-    font-family: var(--mav-fam);
+  background-color: #0d6efd;
+  height: 45px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  font-family: var(--mav-fam);
+}
+
+@media (min-width: 500px) {
+  .about-page {
+    max-width: 100%;
+  }
+
+  .about-part-two,
+  .about-part-three,
+  .about-part-five,
+  .about-part-six {
+    padding: 50px 100px;
+  }
+
+  .about-part-three .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .about-part-five .grid {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .about-part-five .grid > div {
+    margin-bottom: 0px;
+  }
+
+  .about-part-six .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .about-part-seven {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 50px;
+  }
+
+  .about-part-seven > div {
+    width: 50%;
+  }
+
+  .about-page-form {
+    width: 50%;
+  }
 }

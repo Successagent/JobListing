@@ -47,6 +47,10 @@
   width: 100%;
 }
 
+.contact-part-two .grid {
+  border: none;
+}
+
 @media (min-width: 500px) {
   .contact-page {
     max-width: 100%;

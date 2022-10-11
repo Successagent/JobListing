@@ -1,5 +1,5 @@
 import '../About/About.css'
-import Footer from "../../components/Footer"
+import Footer from '../../components/Footer'
 import {
   FaUser,
   FaPencilAlt,
@@ -263,14 +263,16 @@ const About = () => {
           </div>
         </div>
         <div className="about-part-seven">
-          <h2 className="h2">Subscribe to Our Newsletter</h2>
-          <h5 className="h5">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Laudantium, officiis.
-          </h5>
+          <div>
+            <h2 className="h2">Subscribe to Our Newsletter</h2>
+            <h5 className="h5">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Laudantium, officiis.
+            </h5>
+          </div>
           <form className="about-page-form">
-            <input className='input' type="email" />
-            <button className='form-btn'>Subscribe</button>
+            <input className="input" type="email" />
+            <button className="form-btn">Subscribe</button>
           </form>
         </div>
       </div>
