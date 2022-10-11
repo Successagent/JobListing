@@ -18,13 +18,18 @@ const StyledEmployerCard = styled.div`
   flex: 1;
 
   .avatar {
-    --size: 6em;
+    margin-top: 1em;
+    --size: 5em;
     height: var(--size);
+    width: var(--size);
+    min-height: var(--size);
+    min-width: var(--size);
+    max-height: var(--size);
+    max-width: var(--size);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    width: var(--size);
     border-radius: 999px;
     background: #000;
   }
@@ -40,6 +45,7 @@ const StyledEmployerCard = styled.div`
     background: transparent;
     border: 1px solid #e8ebf3;
     border-radius: 3px;
+    color: #000;
   }
 
   .card__bottom {

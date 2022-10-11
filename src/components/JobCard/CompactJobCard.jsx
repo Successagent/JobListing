@@ -8,11 +8,13 @@ const StyledCompactJobCard = styled.div`
   border: 1px solid #e8ebf3;
   border-radius: 2px;
   background: #fff;
+  color: #333;
   justify-content: space-between;
   padding: 20px;
   @media screen and (max-width: 500px) {
     flex-direction: column;
-    align-items: start;
+    align-items: center;
+    text-align: center;
   }
   .job_card__desc {
     display: flex;
