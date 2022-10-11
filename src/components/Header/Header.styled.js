@@ -10,10 +10,24 @@ const StyledHeader = styled.section`
   position: sticky;
   top: 0;
   z-index: 10;
-
+  .menu {
+    display: block;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
   .navbar-nav {
-    display: flex;
+    display: none;
     gap: 10px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+  .call_btn {
+    color: var(--primary-8);
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
 `;
 

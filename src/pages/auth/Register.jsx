@@ -1,44 +1,48 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import StyledAuthPage from "./auth.styled";
 
-export default function Login() {
+export default function Register() {
   return (
-    <div>
+    <StyledAuthPage>
       <form action="">
-        <h4>Register</h4>
-        <div className="horizontal_line" />
-        <button>Facebook</button>
-        <button>Google</button>
-        <div className="">
-          <div className="horizontal_line" />
-          <p>or</p>
-          <div className="horizontal_line" />
+        <div className="form__top">
+          <h4>Register</h4>
         </div>
-        <label>
+        <div className="other_auth">
+          <button>Facebook</button>
+          <button>Google</button>
+        </div>
+        <div className="or_line">
+          <div className="horizontal_line">
+            <div className=""></div>
+          </div>
+          <p>or</p>
+          <div className="horizontal_line">
+            <div className=""></div>
+          </div>
+        </div>
+        <label className="label">
           <p>Email Address</p>
-          <input type="text" />
+          <input className="input" type="text" placeholder="Enter email" />
         </label>
-        <label>
+        <label className="label">
           <p>Email Address</p>
-          <input type="text" />
+          <input className="input" type="text" placeholder="Password" />
         </label>
-        <label>
-          <p>Email Address</p>
-          <input type="text" />
-        </label>
-        <div className="">
-          <label>
+        <div className="row jcsb">
+          <label className="row">
             <input type="checkbox" name="" id="" />
-            <p>Agree to terms and policy</p>
+            <p>Remember me</p>
           </label>
 
-          <span />
+          <Link to={"/"}>Forgot Password</Link>
         </div>
-        <button>Sign Up</button>
+        <button>SignIn</button>
         <p>
-          You have an account? <Link to={"/"}>Sign In</Link>
+          Don't have an account yet? <Link to={"/"}>Sign Up</Link>
         </p>
       </form>
-    </div>
+    </StyledAuthPage>
   );
 }

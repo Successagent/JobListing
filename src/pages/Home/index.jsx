@@ -6,7 +6,7 @@ import SmallCard from "../../components/SmallCard";
 import { CompanyLogos, JobCategories } from "../../constants";
 import "./Home.css";
 import companyLogo from "../../assets/stock3.png";
-import avatarImg from "../../assets/stock2.jpg";
+import Testimonials from "../../components/Testimonials";
 
 export default function Home() {
   return (
@@ -35,7 +35,7 @@ export default function Home() {
           <h2>Featured Employers</h2>
         </div>
         <div className="section__bottom">
-          <div className="row">
+          <div className="grid--small">
             {[1, 1, 1, 1].map(() => (
               <EmployerCard />
             ))}
@@ -50,7 +50,7 @@ export default function Home() {
           <div className="job_categories">
             {JobCategories.map((job) => (
               <SmallCard>
-                {job.icon}
+                <img src={job.icon} width={50} alt="" />
                 <p>{job.title}</p>
               </SmallCard>
             ))}
@@ -66,7 +66,7 @@ export default function Home() {
         <div className="section_bottom">
           <div className="container">
             {/* <Carousel> */}
-            <div className="row">
+            <div className="grid--small">
               {CompanyLogos.map(() => (
                 <SmallCard>
                   <img src={companyLogo} alt="" />
@@ -77,34 +77,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="section--white">
-        <div className="section__top">
-          <h2>Testimonials</h2>
-        </div>
-        <div className="section_bottom">
-          <div className="container">
-            <Carousel>
-              <div className="testimony_card">
-                <div className="testimony_card__top">
-                  <img src={avatarImg} alt="" />
-                </div>
-                <div className="testimony_card__bottom">
-                  <h3>Company Name</h3>
-                  <p>
-                    {" "}
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit, sed quia consequuntur magni dolores eos qui
-                    ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-                    qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                    velit, sed quia non numquam eius modi tempora incidunt ut
-                    labore.{" "}
-                  </p>
-                </div>
-              </div>
-            </Carousel>
-          </div>
-        </div>
-      </section>
+      <Testimonials />
       <section>
         <div className="section__top">
           <h2>Latest Jobs</h2>
@@ -120,9 +93,12 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="row">
+        <div className="column">
           <p>Subscribe to our newsletter</p>
-          <input type="text" placeholder="Enter your email" />
+          <div className="subscribe">
+            <input type="text" placeholder="Enter your email" />
+            <button>Subscribe</button>
+          </div>
         </div>
       </section>
     </div>

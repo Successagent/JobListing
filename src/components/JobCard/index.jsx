@@ -2,8 +2,8 @@ import React from "react";
 import CompactJobCard from "./CompactJobCard";
 import stockImg1 from "../../assets/stock1.jpg";
 import styled from "styled-components";
-import { BsHouseDoorFill } from "react-icons/bs";
-
+import { BsHouseDoorFill, BsPersonFill, BsCalendarEvent } from "react-icons/bs";
+import { MdOutlineWorkOutline } from "react-icons/md";
 import StyledJobCard from "./JobCard.styled";
 
 export default function JobCard() {
@@ -24,15 +24,15 @@ export default function JobCard() {
             <p>Los Angel</p>
           </li>
           <li className="card__desc_item">
-            <BsHouseDoorFill />
+            <BsCalendarEvent />
             <p>5 mins ago</p>
           </li>
           <li className="card__desc_item">
-            <BsHouseDoorFill />
+            <BsPersonFill />
             <p>Sallllue adhdi</p>
           </li>
           <li className="card__desc_item">
-            <BsHouseDoorFill />
+            <MdOutlineWorkOutline />
             <p>IT Solutions</p>
           </li>
         </ul>

@@ -16,17 +16,6 @@ section {
   grid-gap: 1rem;
 }
 
-.job_type__icon {
-  --size: 150px;
-  width: var(--size);
-  height: var(--size);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: aqua;
-  border-radius: 999px;
-}
-
 .section__bottom > button {
   margin: 0 auto;
   margin-top: 2em;

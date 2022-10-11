@@ -13,6 +13,21 @@ const StyledJobTypeSection = styled.section`
     /* background: #000; */
     padding: 3em 0;
   }
+  .job_type__icon {
+    --size: 100px;
+    width: var(--size);
+    height: var(--size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+      120deg,
+      var(--primary-9) 0%,
+      var(--primary-8) 100%
+    );
+    color: #fff;
+    border-radius: 999px;
+  }
 `;
 
 export default function JobTypeSection() {

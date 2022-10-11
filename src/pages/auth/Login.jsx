@@ -6,13 +6,14 @@ export default function Login() {
   return (
     <StyledAuthPage>
       <form action="">
-        <h4>Login to your account</h4>
-        <div className="horizontal_line">
-          <div className=""></div>
+        <div className="form__top">
+          <h4>Login to your account</h4>
         </div>
-        <button>Facebook</button>
-        <button>Google</button>
-        <div className="">
+        <div className="other_auth">
+          <button>Facebook</button>
+          <button>Google</button>
+        </div>
+        <div className="or_line">
           <div className="horizontal_line">
             <div className=""></div>
           </div>
@@ -21,16 +22,16 @@ export default function Login() {
             <div className=""></div>
           </div>
         </div>
-        <label>
+        <label className="label">
           <p>Email Address</p>
-          <input type="text" />
+          <input className="input" type="text" placeholder="Enter email" />
         </label>
-        <label>
+        <label className="label">
           <p>Email Address</p>
-          <input type="text" />
+          <input className="input" type="text" placeholder="Password" />
         </label>
-        <div className="">
-          <label>
+        <div className="row jcsb">
+          <label className="row">
             <input type="checkbox" name="" id="" />
             <p>Remember me</p>
           </label>
