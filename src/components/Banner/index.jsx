@@ -12,7 +12,7 @@ const StyledBanner = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: ${(props) => (props.small ? "10em" : "27em")};
+  min-height: ${(props) => (props.small ? "10em" : "27em")};
   flex-direction: column;
   color: #fff;
   position: relative;

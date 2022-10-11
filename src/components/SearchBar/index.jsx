@@ -12,7 +12,7 @@ const StyledSearchBar = styled.div`
   }
 
   .tabs {
-    display: flex;
+    display: ${(props) => (props.small ? "none" : "flex")};
     margin-left: 9px;
     li {
       font-size: 0.8em;
@@ -68,9 +68,9 @@ const StyledSearchBar = styled.div`
   }
 `;
 
-export default function SearchBar() {
+export default function SearchBar({ small }) {
   return (
-    <StyledSearchBar className="">
+    <StyledSearchBar small={small} className="">
       <ul className="tabs">
         <li className="active">Find a Job</li>
         <li>Find a Candidate</li>

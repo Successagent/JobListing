@@ -4,7 +4,7 @@ import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { IoMdCall } from "react-icons/io";
 import { Link } from "react-router-dom";
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <StyledHeader>
       <button

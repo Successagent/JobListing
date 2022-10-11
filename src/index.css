@@ -49,7 +49,6 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  
 }
 
 /* a, p {
@@ -142,7 +141,6 @@ button:focus-visible {
 .horizontal_line > div {
   border-top: 1px solid #e8ebf3;
 }
-
 
 .subscribe_form {
   display: flex;
