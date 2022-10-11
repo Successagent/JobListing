@@ -26,7 +26,7 @@ const About = () => {
           </ul>
         </div>
         <div className="about-part-two">
-          <h2 className="h2">Why Pinlist?</h2>
+          <h2 className="h2">Why DynamicJobListing?</h2>
           <p className="p">
             Majority have suffered alteration in some form, by injected humor
           </p>

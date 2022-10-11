@@ -30,7 +30,7 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/jobleft",
+    path: "/job",
     element: <JobLeft />,
   },
 
