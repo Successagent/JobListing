@@ -91,7 +91,8 @@
   color: white;
 }
 
-.about-part-four .h2 {
+.about-part-four .h2,
+.about-part-seven .h2 {
   line-height: 2.7rem;
 }
 
@@ -103,6 +104,7 @@
   border: none;
   height: 45px;
   margin-top: 20px;
+  font-family: var(--mav-fam);
 }
 
 .about-part-five {
@@ -126,4 +128,41 @@
 
 .about-part-six {
   padding: 50px 10px;
+  text-align: center;
+}
+
+.about-part-six .icon-con {
+  background-color: white;
+  border: 1px solid #0d6efd;
+  color: #0d6efd;
+  height: 65px;
+  width: 65px;
+}
+
+.about-part-seven {
+  padding: 50px 15px;
+  text-align: center;
+  background-color: #edf7fb;
+}
+
+.about-page-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    height: 45px;
+    background-color: white;
+    border: none;
+    width: 70%;
+}
+
+
+.form-btn {
+    background-color: #0d6efd;
+    height: 45px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    font-family: var(--mav-fam);
 }

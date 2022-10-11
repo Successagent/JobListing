@@ -24,6 +24,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+button {
+  font-family: var(--mav-fam);
+}
+
 li,
 a {
   text-decoration: none;
