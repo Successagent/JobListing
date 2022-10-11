@@ -2,6 +2,7 @@ import React from "react";
 import StyledHeader from "./Header.styled";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { IoMdCall } from "react-icons/io";
+import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <StyledHeader>
@@ -12,29 +13,29 @@ export default function Header() {
 
       <ul className="navbar-nav">
         <li className="nav-item">
-          <a href="#" className="nav-link">
+          <Link to={"/"} className="nav-link">
             Home
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a href="#" className="nav-link">
+          <Link to={"/about"} href="#" className="nav-link">
             About
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a href="#" className="nav-link">
+          <Link to={"/contact"} href="#" className="nav-link">
             Contact
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a href="#" className="nav-link">
+          <Link to={"/jobs"} href="#" className="nav-link">
             Job listing
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a href="#" className="nav-link">
+          <Link to={"/job"} href="#" className="nav-link">
             Job
-          </a>
+          </Link>
         </li>
       </ul>
       <a className="call_btn" href="tel:901238080">

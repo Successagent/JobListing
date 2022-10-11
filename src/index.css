@@ -147,7 +147,7 @@ button:focus-visible {
 }
 
 .subscribe_form :is(input, button) {
-  padding: 1em;
+  padding: 1em 1.6em;
   border: none;
 }
 

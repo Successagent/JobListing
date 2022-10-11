@@ -8,6 +8,7 @@ import "./Home.css";
 import companyLogo from "../../assets/stock3.png";
 import Testimonials from "../../components/Testimonials";
 import SearchBar from "../../components/SearchBar/index";
+import Footer from "../../components/Footer/index";
 
 export default function Home() {
   return (
@@ -103,6 +104,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

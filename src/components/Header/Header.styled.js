@@ -30,7 +30,7 @@ const StyledHeader = styled.section`
     }
 
     li a {
-      color: #333;
+      color: #504e70;
       font-size: 0.9rem;
     }
     li {

@@ -1,4 +1,4 @@
-import '../Footer/Footer.css'
+import "./Footer.css";
 
 import {
   FaCcAmex,
@@ -12,9 +12,9 @@ import {
   FaLinkedin,
   FaYoutube,
   FaGoogle,
-} from 'react-icons/fa'
+} from "react-icons/fa";
 
-const index = () => {
+const Footer = () => {
   return (
     <footer className="footer">
       <div className="grid">
@@ -87,7 +87,7 @@ const index = () => {
         <li>Galleries</li>
       </ul>
     </footer>
-  )
-}
+  );
+};
 
-export default index
+export default Footer;

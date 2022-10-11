@@ -1,5 +1,6 @@
-import '../About/About.css'
-import Footer from '../../components/Footer'
+import "../About/About.css";
+import Footer from "../../components/Footer";
+import { Header } from "../../components";
 import {
   FaUser,
   FaPencilAlt,
@@ -11,10 +12,11 @@ import {
   FaHandshake,
   FaPhone,
   FaPaperPlane,
-} from 'react-icons/fa'
+} from "react-icons/fa";
 const About = () => {
   return (
     <>
+      <Header />
       <div className="about-page">
         <div className="about-hero-section">
           <h1 className="h1">About Us</h1>
@@ -61,7 +63,7 @@ const About = () => {
           <div className="grid">
             <div>
               <div className="icon-con">
-                <FaUser style={{ color: '#d63384', fontSize: '20px' }}></FaUser>
+                <FaUser style={{ color: "#d63384", fontSize: "20px" }}></FaUser>
               </div>
               <p className="p">Register</p>
               <h5 className="h5">
@@ -72,7 +74,7 @@ const About = () => {
             <div>
               <div className="icon-con">
                 <FaPencilAlt
-                  style={{ color: '#6610f2', fontSize: '20px' }}
+                  style={{ color: "#6610f2", fontSize: "20px" }}
                 ></FaPencilAlt>
               </div>
               <p className="p">Create Account</p>
@@ -84,7 +86,7 @@ const About = () => {
             <div>
               <div className="icon-con">
                 <FaBullhorn
-                  style={{ color: '#ffc107', fontSize: '20px' }}
+                  style={{ color: "#ffc107", fontSize: "20px" }}
                 ></FaBullhorn>
               </div>
               <p className="p">Add Posts</p>
@@ -96,7 +98,7 @@ const About = () => {
             <div>
               <div className="icon-con">
                 <FaCreditCard
-                  style={{ color: '#dc3545', fontSize: '20px' }}
+                  style={{ color: "#dc3545", fontSize: "20px" }}
                 ></FaCreditCard>
               </div>
               <p className="p">Get Earnings</p>
@@ -128,9 +130,9 @@ const About = () => {
               <div
                 className="icon-con"
                 style={{
-                  backgroundColor: '#198754',
-                  height: '50px',
-                  width: '50px',
+                  backgroundColor: "#198754",
+                  height: "50px",
+                  width: "50px",
                 }}
               >
                 <FaBullhorn></FaBullhorn>
@@ -145,9 +147,9 @@ const About = () => {
               <div
                 className="icon-con"
                 style={{
-                  backgroundColor: '#6610f2',
-                  height: '50px',
-                  width: '50px',
+                  backgroundColor: "#6610f2",
+                  height: "50px",
+                  width: "50px",
                 }}
               >
                 <FaHeart></FaHeart>
@@ -162,9 +164,9 @@ const About = () => {
               <div
                 className="icon-con"
                 style={{
-                  backgroundColor: '#d63384',
-                  height: '50px',
-                  width: '50px',
+                  backgroundColor: "#d63384",
+                  height: "50px",
+                  width: "50px",
                 }}
               >
                 <FaHandshake></FaHandshake>
@@ -179,9 +181,9 @@ const About = () => {
               <div
                 className="icon-con"
                 style={{
-                  backgroundColor: '#fd7e14',
-                  height: '50px',
-                  width: '50px',
+                  backgroundColor: "#fd7e14",
+                  height: "50px",
+                  width: "50px",
                 }}
               >
                 <FaChartLine></FaChartLine>
@@ -196,9 +198,9 @@ const About = () => {
               <div
                 className="icon-con"
                 style={{
-                  backgroundColor: '#0d6efd',
-                  height: '50px',
-                  width: '50px',
+                  backgroundColor: "#0d6efd",
+                  height: "50px",
+                  width: "50px",
                 }}
               >
                 <FaBookmark></FaBookmark>
@@ -213,9 +215,9 @@ const About = () => {
               <div
                 className="icon-con"
                 style={{
-                  backgroundColor: '#dc3545',
-                  height: '50px',
-                  width: '50px',
+                  backgroundColor: "#dc3545",
+                  height: "50px",
+                  width: "50px",
                 }}
               >
                 <FaPhone></FaPhone>
@@ -232,7 +234,7 @@ const About = () => {
           <div className="grid">
             <div>
               <div className="icon-con">
-                <FaUser style={{ fontSize: '20px' }}></FaUser>
+                <FaUser style={{ fontSize: "20px" }}></FaUser>
               </div>
 
               <h5 className="p">Total Sales</h5>
@@ -240,7 +242,7 @@ const About = () => {
             </div>
             <div>
               <div className="icon-con">
-                <FaPencilAlt style={{ fontSize: '20px' }}></FaPencilAlt>
+                <FaPencilAlt style={{ fontSize: "20px" }}></FaPencilAlt>
               </div>
 
               <h5 className="p">Total Projects</h5>
@@ -248,14 +250,14 @@ const About = () => {
             </div>
             <div>
               <div className="icon-con">
-                <FaBullhorn style={{ fontSize: '20px' }}></FaBullhorn>
+                <FaBullhorn style={{ fontSize: "20px" }}></FaBullhorn>
               </div>
               <h5 className="p">Clients</h5>
               <h2 className="h2">1768</h2>
             </div>
             <div>
               <div className="icon-con">
-                <FaCreditCard style={{ fontSize: '20px' }}></FaCreditCard>
+                <FaCreditCard style={{ fontSize: "20px" }}></FaCreditCard>
               </div>
               <h5 className="p">Happy Customers</h5>
               <h2 className="h2">1768</h2>
@@ -278,7 +280,7 @@ const About = () => {
       </div>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;
