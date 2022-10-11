@@ -15,7 +15,7 @@
   --mav-fam: "Maven Pro", sans-serif;
   --quickstand-fam: "Quicksand", sans-serif;
   color-scheme: light dark;
-  background-color: white;
+  background-color: #f6f7fb;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -47,6 +47,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  color: #605e7e;
 }
 
 h1 {
@@ -71,6 +72,10 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.section--white {
+  background-color: #fff;
 }
 
 .section__top {

@@ -9,6 +9,7 @@ const StyledHeader = styled.section`
   color: #000;
   position: sticky;
   top: 0;
+  z-index: 10;
 
   .navbar-nav {
     display: flex;
