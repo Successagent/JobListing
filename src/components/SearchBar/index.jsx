@@ -8,11 +8,12 @@ const StyledSearchBar = styled.div`
   width: 100%;
 
   @media screen and (min-width: 768px) {
-    width: 60%;
+    min-width: 60%;
+    max-width: 700px;
   }
 
   .tabs {
-    display: flex;
+    display: ${(props) => (props.small ? "none" : "flex")};
     margin-left: 9px;
     li {
       font-size: 0.8em;
@@ -68,9 +69,9 @@ const StyledSearchBar = styled.div`
   }
 `;
 
-export default function SearchBar() {
+export default function SearchBar({ small }) {
   return (
-    <StyledSearchBar className="">
+    <StyledSearchBar small={small} className="">
       <ul className="tabs">
         <li className="active">Find a Job</li>
         <li>Find a Candidate</li>

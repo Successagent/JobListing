@@ -1,6 +1,6 @@
-import '../JobLeft/JobLeft.css'
-import Footer from '../../components/Footer'
-import ProfileLogo from '../../assets/25.jpg'
+import "../JobLeft/JobLeft.css";
+import Footer from "../../components/Footer";
+import ProfileLogo from "../../assets/25.jpg";
 
 import {
   FaEnvelope,
@@ -12,22 +12,22 @@ import {
   FaGoogle,
   FaUser,
   FaStar,
-} from 'react-icons/fa'
-import { JobCard } from '../../components'
+} from "react-icons/fa";
+import { Banner, Header, JobCard } from "../../components";
+import SearchBar from "../../components/SearchBar/index";
 
 const index = () => {
   return (
     <>
+      <Header />
+
       <div className="jobleft-page">
-        <div className="about-hero-section">
+        <Banner small>
           <h1 className="h1">
-            <span>134,445</span> Jobs Available in AstroSoft
+            <b>134,445</b> Jobs Available in AstroSoft
           </h1>
-          <form className="jobleft-form">
-            <input className="input" type="text" />
-            <button className="form-btn">Search</button>
-          </form>
-        </div>
+          <SearchBar small />
+        </Banner>
         <div className="jobleft-part-one">
           <p className="p">Jobs</p>
           <ul>
@@ -54,19 +54,19 @@ const index = () => {
               <div className="jobleft-part-two-sect-one-item-two">
                 <p className="p">Contact Info</p>
                 <div>
-                  <div className="icon-con" style={{ color: 'green' }}>
+                  <div className="icon-con" style={{ color: "green" }}>
                     <FaEnvelope></FaEnvelope>
                   </div>
                   <h5 className="h5">robert123@gmail.com</h5>
                 </div>
                 <div>
-                  <div className="icon-con" style={{ color: 'green' }}>
+                  <div className="icon-con" style={{ color: "green" }}>
                     <FaPhone></FaPhone>
                   </div>
                   <h5 className="h5">robert123@gmail.com</h5>
                 </div>
                 <div>
-                  <div className="icon-con" style={{ color: 'green' }}>
+                  <div className="icon-con" style={{ color: "green" }}>
                     <FaLink></FaLink>
                   </div>
                   <h5 className="h5">robert123@gmail.com</h5>
@@ -75,35 +75,35 @@ const index = () => {
               <div className="jobleft-part-two-sect-one-item-three">
                 <div
                   className="icon-con"
-                  style={{ backgroundColor: '#1a1e5d' }}
+                  style={{ backgroundColor: "#1a1e5d" }}
                 >
                   <FaFacebook></FaFacebook>
                 </div>
                 <div
                   className="icon-con"
-                  style={{ backgroundColor: '#0d6efd' }}
+                  style={{ backgroundColor: "#0d6efd" }}
                 >
                   <FaGoogle></FaGoogle>
                 </div>
                 <div
                   className="icon-con"
-                  style={{ backgroundColor: '#dc3545' }}
+                  style={{ backgroundColor: "#dc3545" }}
                 >
                   <FaTwitter></FaTwitter>
                 </div>
                 <div
                   className="icon-con"
-                  style={{ backgroundColor: '#198754' }}
+                  style={{ backgroundColor: "#198754" }}
                 >
                   <FaDribbble></FaDribbble>
                 </div>
               </div>
               <div className="jobleft-part-two-sect-one-item-four">
-                <button style={{ backgroundColor: '#0d6efd' }}>
+                <button style={{ backgroundColor: "#0d6efd" }}>
                   <FaUser></FaUser>
                   <h5 className="h5">Chat</h5>
                 </button>
-                <button style={{ backgroundColor: '#6f42c1' }}>
+                <button style={{ backgroundColor: "#6f42c1" }}>
                   <FaEnvelope></FaEnvelope>
                   <h5 className="h5">Contact Me</h5>
                 </button>
@@ -128,25 +128,25 @@ const index = () => {
               <div className="jobleft-part-two-sect-one-item-three">
                 <div
                   className="icon-con"
-                  style={{ backgroundColor: '#1a1e5d' }}
+                  style={{ backgroundColor: "#1a1e5d" }}
                 >
                   <FaFacebook></FaFacebook>
                 </div>
                 <div
                   className="icon-con"
-                  style={{ backgroundColor: '#0d6efd' }}
+                  style={{ backgroundColor: "#0d6efd" }}
                 >
                   <FaGoogle></FaGoogle>
                 </div>
                 <div
                   className="icon-con"
-                  style={{ backgroundColor: '#dc3545' }}
+                  style={{ backgroundColor: "#dc3545" }}
                 >
                   <FaTwitter></FaTwitter>
                 </div>
                 <div
                   className="icon-con"
-                  style={{ backgroundColor: '#198754' }}
+                  style={{ backgroundColor: "#198754" }}
                 >
                   <FaDribbble></FaDribbble>
                 </div>
@@ -160,17 +160,21 @@ const index = () => {
           <div>
             <JobCard />
             <div className="contact-part-one">
-          <form className="contact-form">
-            <input className="input" type="text" placeholder="Your Name" />
-            <input className="input" type="email" placeholder="Email Address" />
-            <textarea
-              className="input textarea"
-              placeh
-              older="Message"
-            ></textarea>
-            <button>Send Message</button>
-          </form>
-        </div>
+              <form className="contact-form">
+                <input className="input" type="text" placeholder="Your Name" />
+                <input
+                  className="input"
+                  type="email"
+                  placeholder="Email Address"
+                />
+                <textarea
+                  className="input textarea"
+                  placeh
+                  older="Message"
+                ></textarea>
+                <button>Send Message</button>
+              </form>
+            </div>
           </div>
         </div>
         <div className="about-part-seven">
@@ -189,7 +193,7 @@ const index = () => {
       </div>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default index
+export default index;

@@ -1,12 +1,10 @@
 import React from "react";
-import CompactJobCard from "./CompactJobCard";
+import StyledJobCard from "./JobCard.styled";
 import stockImg1 from "../../assets/stock1.jpg";
 import { BsHouseDoorFill, BsPersonFill, BsCalendarEvent } from "react-icons/bs";
 import { MdOutlineWorkOutline } from "react-icons/md";
-import StyledJobCard from "./JobCard.styled";
-import SmallJobCard from "./SmallJobCard";
 
-export default function JobCard() {
+export default function SmallJobCard() {
   return (
     <StyledJobCard>
       <div className="card__top">
@@ -18,6 +16,10 @@ export default function JobCard() {
       </div>
       <div className="card__bottom">
         <h4>Female Person</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          sunt neque fuga!
+        </p>
         <ul className="card__desc_grid">
           <li className="card__desc_item">
             <BsHouseDoorFill />
@@ -27,18 +29,8 @@ export default function JobCard() {
             <BsCalendarEvent />
             <p>5 mins ago</p>
           </li>
-          <li className="card__desc_item">
-            <BsPersonFill />
-            <p>Sallllue adhdi</p>
-          </li>
-          <li className="card__desc_item">
-            <MdOutlineWorkOutline />
-            <p>IT Solutions</p>
-          </li>
         </ul>
       </div>
     </StyledJobCard>
   );
 }
-
-export { CompactJobCard, SmallJobCard };
